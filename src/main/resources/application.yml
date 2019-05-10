@@ -4,7 +4,6 @@ server:
   #    # 项目contextPath
     context-path: /manyDatasource
 
-
 spring:
   application:
       name: manyDatasource
@@ -50,28 +49,11 @@ spring:
         maintenanceInterval: 60
         maxIdleTime: 60
 
-#    ds2:
-#      druid:
-#        url: jdbc:sqlserver://10.16.0.242:1433;databasename=ecology
-#        driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
-#        username: sa
-#        password: 2yupei.!@#
-
-
-#  thymeleaf:
-#      cache: false
-#      mode: HTML5
-#      encoding: UTF-8
-#      content-type: text/html
-
 mybatis:
     mapper-locations: classpath:mapper/*.xml
 
-
-
 #设置静态资源路径，多个以逗号分隔
 spring.resources.static-locations: classpath:static/,file:static/
-
 
 # 日志配置
 logging:
@@ -79,106 +61,4 @@ logging:
     czs: debug
     org.springframework: WARN
     org.spring.springboot.dao: debug
-
-
-#logging:
-#    level:
-#        com.am: DEBUG
-#
-## 开发环境配置
-#server:
-#  # 服务端口
-#  port: 8088
-#  servlet:
-#    # 项目contextPath
-#    context-path: /colo
-#  tomcat:
-#    # tomcat的URI编码
-#    uri-encoding: UTF-8
-#    # tomcat最大线程数，默认为200
-#    max-threads: 800
-#    # Tomcat启动初始化的线程数，默认值25
-#    min-spare-threads: 30
-#
-## Spring配置
-#spring:
-#  datasource:
-#    ds1:
-#        jdbc-url: jdbc:mysql://localhost:3306/colo?useUnicode=true&characterEncoding=utf8&useSSL=false
-#        username: root
-#        password: 123456
-#        driver-class-name: com.mysql.jdbc.Driver
-   #spring.mvc.view.prefix/spring.mvc.view.suffix
-
-# 模板引擎
-#  thymeleaf:
-#    mode: HTML
-#    encoding: utf-8
-#    # 禁用缓存
-#    cache: false
-
-
-
-#设置静态资源路径，多个以逗号分隔
-#spring.resources.static-locations: classpath:static/,file:static/
-
-#  mvc:
-#    static-path-pattern: /**
-        # 默认值为 classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/
-
-#  redis:
-#    host: xx.xx.xx.xxx
-#    port: 6379
-#    password: 123456
-#    timeout: 0
-#    jedis:
-#      pool:
-#        max-active: 100
-#        max-idle: -1
-#        max-wait: -1
-
-#mybatis:
-#  mapper-locations: classpath:com/am/colo/dao/*Mapper.xml
-
-
-#aliyun:
-#  producerId: PID_xxx
-#  consumerId: CID_axxx
-#  accessKey: LTAIbvZWdIjgxxx
-#  secretKey: 9rsz1EFMwO2anQDhBlMjbxxx
-#  tag: colo
-#  topic: am_crm_clue_add
-#  onsAddr: http://onsaddr-internet.aliyun.com/rocketmq/nsaddr4client-internet
-#  sendMsgTimeoutMillis: 3000
-#  suspendTimeMillis: 100
-#  maxReconsumeTimes: 20
-
-  #\u65B0\u589E\u8D26\u53F7\u9ED8\u8BA4\u5BC6\u7801
-#my:
-#  defaultpassword: password
-
-
-#amsso:
-#  baseurl: http://xx.xx.x.8:7080
-
-#amper:
-#  baseurl: http://xx.xx.x.8:9080
-
-
-#\u77ED\u4FE1\u53D1\u9001
-#sms:
-#  account: xx
-#  password: xx
-#  report: true
-#  openUrl: http://xxx.xx.com/msg/send/json
-
-#\u90AE\u4EF6\u53D1\u9001
-#mail:
-#  sender: xxx@xx-xx.com
-#  userName: xxx@xx-xxx.com
-#  password: xxx
-#  charset: utf-8
-#  mailServerHost: smtp.exmail.qq.com
-#  mailServerPort: 465
-#  validate: true
 
