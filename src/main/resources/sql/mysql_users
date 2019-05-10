@@ -1,0 +1,10 @@
+-- auto-generated definition
+CREATE TABLE users
+(
+  id   INT AUTO_INCREMENT
+    PRIMARY KEY,
+  name VARCHAR(1000) NULL,
+  age  VARCHAR(1000) NULL
+)
+  ENGINE = InnoDB;
+
