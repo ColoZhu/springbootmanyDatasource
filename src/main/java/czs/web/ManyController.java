@@ -10,8 +10,8 @@ import czs.mapper1.ManyService1;
 import czs.mapper2.ManyService2;
 
 /**
- * @author czs
- * @version 创建时间：2018年8月12日 下午9:03:02
+ * @author xxx
+ * @version
  */
 @RestController
 public class ManyController {

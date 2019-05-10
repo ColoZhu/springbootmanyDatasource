@@ -4,7 +4,7 @@ package czs.entity;
 import lombok.Data;
 
 /**
- * @author czs
+ * @author xxx
  * @version 创建时间：
  */
 @Data

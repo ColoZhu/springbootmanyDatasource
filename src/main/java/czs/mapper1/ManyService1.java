@@ -7,8 +7,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 /**
- * @author czs
- * @version 创建时间：2018年8月12日 下午7:28:07
+ * @author xxx
+ * @version
  */
 @Service
 public class ManyService1 {
