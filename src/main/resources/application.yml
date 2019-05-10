@@ -19,18 +19,18 @@ spring:
         min-idle: 1
         max-active: 20
         test-on-borrow: true
-#        driver-class-name: com.mysql.jdbc.Driver
-#        下面是最新的mysql8版本推荐的驱动
+#       driver-class-name: com.mysql.jdbc.Driver
+#       最新的mysql8版本推荐的驱动
         driver-class-name: com.mysql.cj.jdbc.Driver
         type: com.alibaba.druid.pool.DruidDataSource
-#        下面是另外加的配置数据源的参数
+#       下面是另外加的配置数据源的参数
         minPoolSize: 3
         maxPoolSize: 25
         maxLifetime: 20000
         borrowConnectionTimeout: 30
         loginTimeout: 30
         maintenanceInterval: 60
-        maxIdleTime: 60
+        maxIdleTime: 60      #连接回收时间
 
       test2:
         jdbcurl: jdbc:mysql://localhost:3306/test2?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8
