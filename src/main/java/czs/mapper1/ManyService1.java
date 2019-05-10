@@ -18,7 +18,6 @@ public class ManyService1 {
     @Autowired
     private UserMapper2 userMapper2;
 
-
  /*   @Transactional(transactionManager = "test1TransactionManager",rollbackFor = Exception.class)
     public int insert(String name, Integer age) {
         int i = userMapper1.insert(name, age);
@@ -44,7 +43,6 @@ public class ManyService1 {
         int i = 1 / age;// 赋值age为0故意引发事务
         return insert + insert2;
     }
-
 
 
 }

@@ -7,7 +7,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 
 
 /**
- * 将application.properties配置文件中配置自动封装到实体类字段中
+ * 将application.yml配置文件中配置自动封装到实体类字段中
  * @author Administrator
  */
 @Data
